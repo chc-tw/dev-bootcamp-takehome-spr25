@@ -1,8 +1,63 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hao Cheng Chang's Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <div class="profile-container">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="social-icons">
+                    <a href="https://github.com/chc-tw" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/haochengchang/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://chc-personal-website.notion.site/Hao-Cheng-Chang-c5e99cd02adf4a6aa51df659eea00983?pvs=4" class="social-icon"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-body">
+            <h1 class="name">Hao Cheng Chang</h1>
+            <div class="info">
+                <div class="grid">
+                    <p class="major"><i class="fas fa-graduation-cap"></i> Computaional Science and Engineering</p>
+                    <p class="year"><i class="fas fa-calendar"></i> First Year</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Taiwan</p>
+                    <p class="email">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:hchang367@gatech.edu">hchang367@gatech.edu</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="passion-section">
+                <h2>Passion for Social Good</h2>
+                <p>I didn't participate in many social good activities or non-profit organizations, so I'm not sure if I have a passion for social good. But, I'm sure I want to use my ability to do something that can help people,
+                    and I'm sure I want to do something that can make this world a better place.</p>
+            </div>
 
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-<!-- Your HTML Here -->
+            <div class="interactive-section">
+                <h2>Let's Connect!</h2>
+                <div class="message-form">
+                    <input type="text" placeholder="Write a message..." id="messageInput">
+                    <button onclick="sendMessage()" class="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="utility.js"></script>
+</body>
 </html>
